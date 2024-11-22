@@ -33,12 +33,12 @@ This is a lightweight Learning Management System (LMS) built with pure PHP for t
 ```
 
 2. Set up the database:
-   - Import the `lms.sql` file into your MySQL server.
+   - Import the `StudentLMS.sql` file into your MySQL server.
 3. Configure the database connection:
-   - Update the `config.php` file with your database credentials.
+   - Update the `db.php` file with your database credentials.
 4. Start the project:
    - Place the project in your XAMPP/WAMP server's `htdocs` folder.
-   - Start the server and access the project at `http://localhost/lms`.
+   - Start the server and access the project at `http://localhost/DIT77LMS_PROJECT`.
 
 ## Contribution
 1. Fork the repository.
