@@ -1,5 +1,10 @@
-    <!-- Link to external JS file -->
-    <script src="js/app.js"></script>
-    </body>
+        </main> <!-- Close main content -->
+        </div> <!-- Close d-flex -->
+        <!-- Bootstrap JS -->
+        <script src="includes/assets/js/bootstrap.bundle.min.js"></script>
 
-    </html>
+        <!-- Custom JS -->
+        <script src="includes/assets/js/app.js"></script>
+        </body>
+
+        </html>

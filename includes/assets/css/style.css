@@ -1,0 +1,100 @@
+.poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: "Poppins", serif;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav.sidebar {
+    width: 300px;
+}
+
+.copywrite {
+    font-size: 12px;
+
+}
+
+li.nav-item:hover {
+
+    color: rgb(12, 236, 83);
+}
+
+/* Sidebar Overlay */
+.mobile-sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1050;
+}
+
+/* Mobile Sidebar */
+.mobile-sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    /* Start off-screen */
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    /* Full height of the viewport */
+    background-color: #343a40;
+    overflow-y: auto;
+    /* Ensure scrollability if content exceeds height */
+    transition: left 0.8s ease-in-out;
+    /* Smooth slide effect */
+    z-index: 1060;
+}
+
+.mobile-sidebar.open {
+    left: 0;
+    /* Slide in */
+}
+
+/* Ensure content inside sidebar scrolls */
+.mobile-sidebar .p-3 {
+    overflow-y: auto;
+    max-height: calc(100vh - 3rem);
+}
+
+/* Disable body scroll when sidebar is open */
+body.sidebar-open {
+    overflow: hidden;
+}
+
+/* Adjust close button visibility */
+#closeSidebarBtn {
+    z-index: 1070;
+}
