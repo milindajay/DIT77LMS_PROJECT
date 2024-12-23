@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 include('includes/db.php');
 include('includes/auth.php');
@@ -13,8 +12,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     } else {
         $error = "Invalid username or password.";
-        include('templates/login.html');
     }
-} else {
-    include('templates/login.html');
 }
+?>
+
+<?php
+  include('includes/header-non-loggedin.php');
+include('templates/login.html'); // Include the login form HTML
+include('includes/footer.php');
+?>

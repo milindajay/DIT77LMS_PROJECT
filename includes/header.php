@@ -27,7 +27,7 @@
     <div class="d-md-flex">
         <!-- Sidebar -->
         <!-- Sidebar -->
-        <nav class="sidebar bg-dark vh-100 px-2 py-4 text-white d-none d-md-flex flex-column justify-content-between"
+        <nav class="sidebar vh-100 px-2 py-4 text-white d-none d-md-flex flex-column justify-content-between"
             id="desktopSidebar">
             <!-- Top Section -->
             <div>
@@ -49,12 +49,11 @@
 
                 <!-- Profile Buttons -->
                 <div class="d-flex justify-content-evenly mb-4">
-                    <button type="button" class="btn btn-outline-primary btn-sm"
+                    <button type="button" class="btn btn-outline-light btn-sm"
                         onclick="window.location.href='edit_profile.php'">
                         Edit Profile <i class="bi bi-pencil-square"></i>
                     </button>
-                    <button type="button" class="btn btn-outline-danger btn-sm"
-                        onclick="window.location.href='logout.php'">
+                    <button type="button" class="btn btn-danger btn-sm" onclick="window.location.href='logout.php'">
                         Logout <i class="bi bi-box-arrow-right"></i>
                     </button>
                 </div>

@@ -1,7 +1,7 @@
 <?php
 
 // Enable debugging in development environment only
-$debug = true;
+$debug = false;
 
 // Replace with your own database credentials
 $host = 'localhost';

@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row justify-content-center align-items-center vh-100">
+        <div class="col">
+            <div class="border-0 card shadow">
+                <div class="card-body p-5">
+                    <div class="text-center mb-4">
+                        <img src="includes/assets/images/imbslogo.png" alt="Logo" class="img-fluid"
+                            style="max-height: 60px;">
+                    </div>
+
+                    <?php if (isset($error)): ?>
+                    <div class="alert alert-danger" role="alert">
+                        <?php echo htmlspecialchars($error); ?>
+                    </div>
+                    <?php endif; ?>
+
+                    <form method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF"]); ?>">
+                        <div class="mb-3">
+                            <label for="username" class="form-label poppins-regular">Username:</label>
+                            <input type="text" id="username" name="username" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label poppins-regular">Password:</label>
+                            <input type="password" id="password" name="password" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 poppins-bold">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

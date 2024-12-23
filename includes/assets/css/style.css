@@ -1,3 +1,38 @@
+/* Color Variables */
+:root {
+    --white: #ffffff;
+    --rich-black: #00171f;
+    --prussian-blue: #003459;
+    --aero: #11b5e4;
+    --electric-blue: #86F3F8;
+}
+
+/* General Styles */
+body {
+    font-family: "Poppins", serif;
+    background-color: var(--white);
+    color: var(--rich-black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--rich-black);
+}
+
+a {
+    text-decoration: none;
+    color: var(--aero);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Typography */
 .poppins-light {
     font-family: "Poppins", serif;
     font-weight: 300;
@@ -16,37 +51,19 @@
     font-style: normal;
 }
 
-body {
-    font-family: "Poppins", serif;
-    background-color: #f4f4f4;
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-}
-
-a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
+/* Sidebar Styles */
 nav.sidebar {
     width: 300px;
+    background-color: var(--prussian-blue);
+    color: var(--white);
 }
 
-.copywrite {
-    font-size: 12px;
-
+.sidebar .nav-link {
+    color: var(--white);
 }
 
-li.nav-item:hover {
-
-    color: rgb(12, 236, 83);
+.sidebar .nav-link:hover {
+    color: var(--electric-blue);
 }
 
 /* Sidebar Overlay */
@@ -97,4 +114,9 @@ body.sidebar-open {
 /* Adjust close button visibility */
 #closeSidebarBtn {
     z-index: 1070;
+}
+
+.copywrite {
+    font-size: 12px;
+    color: var(--white);
 }
